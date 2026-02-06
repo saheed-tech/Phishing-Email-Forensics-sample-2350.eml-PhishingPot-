@@ -20,6 +20,7 @@ I extracted all URLs from the email body (including shortened or redirected link
 •	redirect chains / embedded trackers
 •	historical flags and community reports
 Outcome recorded: URL verdicts, detection ratios, and any redirect evidence.
+[view results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/6_virus_total_analysis.PNG)
 ________________________________________
 **2) Investigation of the sender’s IP on AbuseIPDB**
 
@@ -29,6 +30,7 @@ Using the email headers, I identified the originating sender IP (typically from 
 •	frequency and recency of reports
 •	ISP/ASN context
 Outcome recorded: IP reputation summary and abuse confidence.
+[view results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/7_ipdb_analysis.PNG)
 ________________________________________
 **3) SPF Record Check**
 
@@ -38,6 +40,7 @@ What I checked:
 •	which IPs are permitted in SPF
 •	whether SPF aligned with the visible “From” domain
 Outcome recorded: SPF result and alignment status.
+[view results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/8_sfp%3Dfail_analysis.PNG)
 ________________________________________
 **4) DKIM Record Check**
 
@@ -47,6 +50,7 @@ What I checked:
 •	dkim=pass/fail results (if provided by the receiving system)
 •	signing domain (d=) and selector (s=)
 Outcome recorded: DKIM presence + pass/fail and signing domain.
+[view results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/9_dkim%3Dnone_analysis.PNG)
 ________________________________________
 **5) DMARC Record Check**
 
@@ -59,6 +63,7 @@ o	SPF domain (MAIL FROM / Return-Path)
 o	DKIM signing domain
 •	DMARC policy (p=none/quarantine/reject)
 Outcome recorded: DMARC policy and pass/fail status.
+[view results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/9_dkim%3Dnone_analysis.PNG)
 ________________________________________
 **6) From Path and Return-Path Review**
 
@@ -69,6 +74,7 @@ What I checked:
 •	suspicious display name tricks (brand impersonation)
 •	inconsistencies across header domains
 Outcome recorded: alignment/mismatch notes and spoofing indicators.
+[view results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/10_from_return_analysis.PNG)
 ________________________________________
 **Findings Summary**
 
@@ -77,4 +83,11 @@ Based on the 6-factor analysis, I documented whether the email shows signs of:
 •	malicious infrastructure (bad IP reputation)
 •	malicious URLs (VirusTotal detections)
 •	misalignment between From / Return-Path (common phishing indicator)
+[virustotal results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/6_virus_total_analysis.PNG)
+[abuseipdb](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/7_ipdb_analysis.PNG)
+[SPF record](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/8_sfp%3Dfail_analysis.PNG)
+[DKIM record](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/9_dkim%3Dnone_analysis.PNG)
+[DMARC record](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/9_dkim%3Dnone_analysis.PNG)
+[from and return](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/10_from_return_analysis.PNG)
+
 
