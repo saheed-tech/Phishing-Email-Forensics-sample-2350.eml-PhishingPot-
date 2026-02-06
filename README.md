@@ -83,11 +83,17 @@ Based on the 6-factor analysis, I documented whether the email shows signs of:
 •	malicious infrastructure (bad IP reputation)
 •	malicious URLs (VirusTotal detections)
 •	misalignment between From / Return-Path (common phishing indicator)
+
 [virustotal results](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/6_virus_total_analysis.PNG)
+
 [abuseipdb](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/7_ipdb_analysis.PNG)
+
 [SPF record](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/8_sfp%3Dfail_analysis.PNG)
+
 [DKIM record](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/9_dkim%3Dnone_analysis.PNG)
+
 [DMARC record](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/9_dkim%3Dnone_analysis.PNG)
+
 [from and return](https://github.com/saheed-tech/Phishing-Email-Forensics-sample-2350.eml-PhishingPot-/blob/main/10_from_return_analysis.PNG)
 
 
